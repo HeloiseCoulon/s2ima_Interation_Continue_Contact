@@ -23,15 +23,15 @@ public class ContactServiceMockTest extends EasyMockSupport{
         service.add("Cookies");
     }
 
-//    @Test(expected = ContactNotFoundException.class)
-//    public void testDelContactNonExist() throws ContactNotFoundException {
-//        // 1 - Enregistrement des comportement de mocks
-//        EasyMock.expect(contactDao.findByName("ContactPasExistant")).andReturn(null);
-//        // 2 - Fin d'nregistrement
-//        replayAll();
-//        // 3 - Test
-//        service.del("ContactPasExistant");
-//    }
+    /*@Test(expected = ContactNotFoundException.class)
+    public void testDelContactNonExist() throws ContactNotFoundException {
+        // 1 - Enregistrement des comportement de mocks
+        EasyMock.expect(contactDao.findByName("ContactPasExistant")).andReturn(null);
+        // 2 - Fin d'nregistrement
+        replayAll();
+        // 3 - Test
+        service.del("ContactPasExistant");
+    }*/
 
     @Test
     public void testDelContactExist() throws ContactNotFoundException {

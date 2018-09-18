@@ -6,13 +6,6 @@ public class ContactService implements IContactService{
         this.dao = new ContactDao();
     }
 
-    public IContactDao getDao() {
-        return dao;
-    }
-
-    public void setDao(IContactDao dao) {
-        this.dao = dao;
-    }
 
 
     public void add(String contactName) throws ContactException {
